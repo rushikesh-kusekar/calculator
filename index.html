@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        .rk{
+            text-align: center;
+            margin:0 auto;
+            margin-bottom: 20px;
+            color: antiquewhite;
+            font-family: cursive;
+        }
+        .calculator-container{
+
+            height: 450px;
+            width: 300px;
+            background-color: #33001a;
+            margin: 30px auto;
+            padding: 20px 25px;
+            border-radius: 20px;
+        }
+
+        .screen{
+
+            background-color:aqua;
+            text-align:right;
+            display:block ;
+            font-size: 22px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            padding: 10px 10px;
+            border-radius: 10px;
+
+        }
+
+        .botton-container{
+
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:space-between;
+
+        }
+        .button{
+            width: 60px;
+            text-align: center;
+            padding: 5px;
+            font-size: 25px;
+            margin:7px;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .button-color{
+            background-color:#d11aff;
+        }
+        
+        .button:hover{
+            box-shadow: 0px 0px 3px 2px rgb(190, 188, 188);
+            transition: 0.5s;
+        }
+
+        .equal-btn{
+            height: 100px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-container ">
+
+        <h2 class="rk">R.K</h2>
+
+      <input type="text" value="0" class="screen">
+        <div class="botton-container">
+
+            <button class="button button-color">AC</button>
+            <button class="button">7</button>
+            <button class="button">4</button>
+            <button class="button">1</button>
+            <button class="button">0</button>
+
+            <button class="button  button-color">%</button>
+            <button class="button">8</button>
+            <button class="button">5</button>
+            <button class="button">2</button>
+            <button class="button">.</button>
+
+            <button class="button  button-color">/</button>
+            <button class="button">9</button>
+            <button class="button">6</button>
+            <button class="button">3</button>
+            <button class="button">del</button>
+
+            <button class="button  button-color">x</button>
+            <button class="button  button-color">-</button>
+            <button class="button  button-color">+</button>
+            <button class="button equal-btn">=</button>
+
+        </div>  
+
+    </div>
+</body>
+</html>
